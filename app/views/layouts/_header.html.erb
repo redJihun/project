@@ -3,8 +3,8 @@
     <%=link_to "Memo app", root_path, id: 'logo'%>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%=link_to 'Home', '#'%></li>
-        <li><%=link_to 'New memo', '#'%></li>
+        <li><%=link_to 'Home', root_path%></li>
+        <li><%=link_to 'New memo', new_memo_path%></li>
         <%if user_signed_in?%>
             <li><%=link_to 'Sign out', destroy_user_session_path, method: :delete%></li>
         <%else%>
